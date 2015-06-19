@@ -1,0 +1,19 @@
+"use strict";
+
+module.exports = {
+  clarify:{
+    apiHost:""api.clarify.io",
+    apiKey:"",
+    notifyUrl:""
+  },
+  restcomm:{
+    appUrl:"",
+    to:""
+  },
+  slack:{
+    webhookUrl:"",
+    defaultChannel:"",
+    defaultUsername: ""
+
+  }
+}
