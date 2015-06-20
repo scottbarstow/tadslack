@@ -55,17 +55,19 @@ To set up the Incoming Webhook Integration, you must be an admin in your Slack s
 - Grab the Webhook Url you see on the screen and paste the value into lib/config.js under slack.webhookUrl
 - Go ahead and configure the Default Channel and Default Username while you're in there.  I created a special channel called #tadslack in my Slack instance, but you can use whatever you like.  Remember to include the '#' at the start of the channel name.
 
-Once you're done with the Incoming Webhook, you'll then need to create a 2nd integration, a Slash Command, to facilitate the app receiving messages from Slack.  To do this:
-- Go to 'Configure Integrations' as before, and select 'Slash Commands' Add
-- For the command, type /call
+Once you're done with the Incoming Webhook, you'll then need to create a 2nd integration, an Outgoing Webhook, to facilitate the app receiving messages from Slack.  To do this:
+- Go to 'Configure Integrations' as before, and select 'Outgoing Webhook' Add
+- For the Trigger Words, I chose @tadslack.  You can use anything you like
 - For the Url, type in the full url to your app + /tadslack.  e.g. http://1.2.3.4:3000/tadslack
-- Leave the method as 'POST' and everything else as defaults and click 'Save Integration'
+- I didn't use the Token in my code simply because I didn't have the time, but obviously it's something that should be done for any kind of production code.
+- Click 'Save Integration'
 
 ### Setting up Restcomm
 
 While I'm getting my app up to the Restcomm App Store, I've included screenshots links below so that you can see how to set up your RestComm app to work properly
 
 [The RestComm App Welcome Screen](https://dl.dropboxusercontent.com/u/2127160/tadhack/lisbon/Welcome.jpg)
+
 [The RestComm App Index Recording Screen](https://dl.dropboxusercontent.com/u/2127160/tadhack/lisbon/indexRecording.jpg)
 
 - Once you've set up your RestComm Visual Designer App, click on the Web Trigger link at the top of the screen and grab the url you see in the instructions.  
